@@ -31,7 +31,7 @@ class Polynomial:
         if self.a0 != 1:
             for i in range(1, self.a0):
                 if self.a0 % i == 0:
-                    divisors_a0.extend((-1, 1, self.a0, -self.a0))
+                    divisors_a0.extend((-1, 1, i, -i, self.a0, -self.a0))
             divisors_a0.sort()
         else:
             divisors_a0.extend((-1, 1))
@@ -48,7 +48,7 @@ class Polynomial:
         if self.an != 1:
             for i in range(1, self.an):
                 if self.an % i == 0:
-                    divisors_an.extend((-1, 1, self.an, -self.an))
+                    divisors_an.extend((-1, 1, i, -i, self.an, -self.an))
             divisors_an.sort()
         else:
             divisors_an.extend((-1, 1))
@@ -65,8 +65,20 @@ class Polynomial:
             for q in self.evaluate_an():
                 possibles_roots.append(p/q)
         possibles_roots.sort()
-        possibles_roots = set(possibles_roots)
-        return list(possibles_roots)
+        possibles_roots = list(set(possibles_roots))
+        return possibles_roots
+
+    def evaluate_polynomial(self, x):
+        """ Evaluate Polynomial for any value.
+
+            Args:
+                x(int): Value to evaluate polynomial
+
+            Returns:
+                Summation about Polynomial
+        """
+        print(sum((x**power)*coefficients for power, coefficients in enumerate(self.coefficients)))
+        return sum((x**power)*coefficients for power, coefficients in enumerate(self.coefficients))
 
     def roots_test(self):
         """ Execute a test for verify the possible roots.
@@ -79,18 +91,12 @@ class Polynomial:
 
                 roots: Roots about Polynomial.
         """
-        y = 0
-        self.coefficients.reverse()
-        print((self.possibles_roots()))
+        print("possibles roots", self.possibles_roots())
         for root in self.possibles_roots():
-            for i in range(len(self.coefficients)):
-                print(i, "i")
-                print(root, "root")
-                y = y + self.coefficients[i]*(root**(i+1))
-                print(y, "y")
-            if y == 0:
+            if self.evaluate_polynomial(root) == 0:
                 self.roots.append(root)
-
+        if self.roots == list:
+            raise Exception("The Polynomial doesn't have a rational root.")
         return self.roots
 
     def __str__(self):
@@ -100,7 +106,5 @@ class Polynomial:
         return str(self)
 
 
-test = Polynomial([1, 2, -1, -2])
+test = Polynomial([1, 7, 7, -15])
 print(test)
-
-

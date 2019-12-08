@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec24628-be24-4c2a-a3ea-a0d6fa69521c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Polynomio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Polynomio.py" afterDir="false" />
     </list>
@@ -17,8 +16,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Polynomio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="306">
+              <caret line="79" column="99" lean-forward="true" selection-start-line="79" selection-start-column="99" selection-end-line="79" selection-end-column="99" />
+              <folding>
+                <element signature="e#22#429#1" />
+                <element signature="e#706#833#1" />
+                <element signature="e#1176#1303#1" />
+                <element signature="e#1650#1813#1" />
+                <element signature="e#2127#2223#1" />
+                <element signature="e#2115#2338#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +60,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="127" />
-    <option name="y" value="60" />
+    <option name="x" value="230" />
+    <option name="y" value="25" />
     <option name="width" value="1026" />
     <option name="height" value="546" />
   </component>
@@ -133,17 +140,26 @@
       <option name="presentableId" value="Default" />
       <updated>1575240637813</updated>
     </task>
+    <task id="LOCAL-00001" summary="Found Error in the summation of code">
+      <created>1575773944726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575773944727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.054315478" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25520834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.71031094" />
+      <window_info active="true" anchor="bottom" x="-33" y="17" width="416" height="618" id="Run" order="2" type="FLOATING" visible="true" weight="0.44353518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -151,7 +167,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -161,6 +177,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Found Error in the summation of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Found Error in the summation of code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Desktop/código/Avaliar Polynomio.py" />
@@ -170,8 +188,16 @@
     <entry file="file://$USER_HOME$/Desktop/código/Raiz de um polinomio racional.py" />
     <entry file="file://$PROJECT_DIR$/Polynomio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="306">
+          <caret line="79" column="99" lean-forward="true" selection-start-line="79" selection-start-column="99" selection-end-line="79" selection-end-column="99" />
+          <folding>
+            <element signature="e#22#429#1" />
+            <element signature="e#706#833#1" />
+            <element signature="e#1176#1303#1" />
+            <element signature="e#1650#1813#1" />
+            <element signature="e#2127#2223#1" />
+            <element signature="e#2115#2338#1" />
+          </folding>
         </state>
       </provider>
     </entry>
