@@ -4,6 +4,7 @@
     <list default="true" id="bec24628-be24-4c2a-a3ea-a0d6fa69521c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Polynomio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Polynomio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.Polynomial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.Polynomial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,20 +12,67 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Test.Polynomial.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="255">
+                    <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+                    <folding>
+                      <element signature="e#0#15#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../NANDTree/NANDTree.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="381">
+                    <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/../NANDTree/Unittest.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="357">
+                    <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="19" />
+                    <folding>
+                      <element signature="e#180#195#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Polynomio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="79" column="99" lean-forward="true" selection-start-line="79" selection-start-column="99" selection-end-line="79" selection-end-column="99" />
+            <state relative-caret-position="769">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#22#429#1" />
                 <element signature="e#706#833#1" />
-                <element signature="e#1176#1303#1" />
-                <element signature="e#1650#1813#1" />
-                <element signature="e#2127#2223#1" />
-                <element signature="e#2115#2338#1" />
               </folding>
             </state>
           </provider>
@@ -45,17 +93,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/../NANDTree/NANDTree.py" />
         <option value="$PROJECT_DIR$/Polynomio.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Math_Algorithm.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/Test.Polynomial.py" />
       </list>
     </option>
   </component>
@@ -71,6 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -101,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in Test.Polynomial.py">
     <configuration name="Polynomio" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Math_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,8 +163,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in Test.Polynomial.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Math_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test.Polynomial.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in Test.Polynomial.py" />
         <item itemvalue="Python.Polynomio" />
       </list>
     </recent_temporary>
@@ -147,8 +202,32 @@
       <option name="project" value="LOCAL" />
       <updated>1575773944727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atualization of project but don't calculate exactly, every roots.">
+      <created>1575836099456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575836099456</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_Test_Polynomial_py - 2019.12.13 at 21h 23m 41s.xml">
+      <configuration name="Unittests in Test.Polynomial.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_Polynomial_py - 2019.12.13 at 21h 29m 07s.xml">
+      <configuration name="Unittests in Test.Polynomial.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_Polynomial_py - 2019.12.13 at 21h 29m 13s.xml">
+      <configuration name="Unittests in Test.Polynomial.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_Polynomial_py - 2019.12.13 at 21h 29m 40s.xml">
+      <configuration name="Unittests in Test.Polynomial.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_Polynomial_py - 2019.12.13 at 21h 29m 42s.xml">
+      <configuration name="Unittests in Test.Polynomial.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -159,7 +238,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" x="-33" y="17" width="416" height="618" id="Run" order="2" type="FLOATING" visible="true" weight="0.44353518" />
+      <window_info active="true" anchor="bottom" x="-1314" y="-243" width="1350" height="666" id="Run" order="2" type="FLOATING" visible="true" weight="0.44353518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -178,25 +257,53 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Found Error in the summation of code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Found Error in the summation of code" />
+    <MESSAGE value="Atualization of project but don't calculate exactly, every roots." />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualization of project but don't calculate exactly, every roots." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Desktop/código/Avaliar Polynomio.py" />
-    <entry file="file://$PROJECT_DIR$/../NANDTree/NANDTree.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/código/Raiz de um polinomio racional.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="1114" column="119" selection-start-line="1114" selection-start-column="119" selection-end-line="1114" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NANDTree/NANDTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NANDTree/Unittest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#180#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Polynomio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="79" column="99" lean-forward="true" selection-start-line="79" selection-start-column="99" selection-end-line="79" selection-end-column="99" />
+        <state relative-caret-position="769">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#22#429#1" />
             <element signature="e#706#833#1" />
-            <element signature="e#1176#1303#1" />
-            <element signature="e#1650#1813#1" />
-            <element signature="e#2127#2223#1" />
-            <element signature="e#2115#2338#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.Polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

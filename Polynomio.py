@@ -72,26 +72,24 @@ class Polynomial:
         """ Evaluate Polynomial for any value.
 
             Args:
-                x(int): Value to evaluate polynomial
+                x(int): Value to evaluate polynomial.
 
             Returns:
-                Summation about Polynomial
+                Summation about Polynomial.
         """
-        print(sum((x**power)*coefficients for power, coefficients in enumerate(self.coefficients)))
-        return sum((x**power)*coefficients for power, coefficients in enumerate(self.coefficients))
+        return sum((x**power)*coefficient for power, coefficient in enumerate(self.coefficients))
 
     def roots_test(self):
         """ Execute a test for verify the possible roots.
 
             Raises:
 
-                Exception: The Polynomial don't have a rational root.
+                Exception: The Polynomial don't has a rational root.
 
             Returns:
 
                 roots: Roots about Polynomial.
         """
-        print("possibles roots", self.possibles_roots())
         for root in self.possibles_roots():
             if self.evaluate_polynomial(root) == 0:
                 self.roots.append(root)
@@ -106,5 +104,5 @@ class Polynomial:
         return str(self)
 
 
-test = Polynomial([1, 7, 7, -15])
+test = Polynomial([1, -1, -12, 24])
 print(test)
