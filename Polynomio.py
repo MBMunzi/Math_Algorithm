@@ -2,11 +2,9 @@ class Polynomial:
     """ Instance a Polynomial.
 
         Args:
-
             coefficients(list): Polynomial coefficients.
 
         Attributes:
-
             coefficients(list): Polynomial coefficients.
             a0(int): Lower coefficient, like form x^1.
             an(int): Greatest coefficient, like form x^an
@@ -24,7 +22,6 @@ class Polynomial:
         """ Calculate divisors of an.
 
             Returns:
-
                 divisors_a0: Divisors about lower coefficient.
         """
         divisors_a0 = []
@@ -41,7 +38,6 @@ class Polynomial:
         """ Calculate divisors of an.
 
             Returns:
-
                 divisors_an: Divisors about lower coefficient.
         """
         divisors_an = []
@@ -58,6 +54,7 @@ class Polynomial:
         """ Calculate possibles roots, like form divisors about a0/an.
 
             Returns:
+
                 possibles_roots: possibles roots about polynomial.
         """
         possibles_roots = []
@@ -77,7 +74,12 @@ class Polynomial:
             Returns:
                 Summation about Polynomial.
         """
-        return sum((x**power)*coefficient for power, coefficient in enumerate(self.coefficients))
+        y = []
+        self.coefficients.reverse()
+        for power in range(len(self.coefficients)):
+            partial_result = self.coefficients[power]*(x**(power+1))
+            y.append(partial_result)
+        return sum(y)
 
     def roots_test(self):
         """ Execute a test for verify the possible roots.
@@ -93,8 +95,6 @@ class Polynomial:
         for root in self.possibles_roots():
             if self.evaluate_polynomial(root) == 0:
                 self.roots.append(root)
-        if self.roots == list:
-            raise Exception("The Polynomial doesn't have a rational root.")
         return self.roots
 
     def __str__(self):
@@ -104,5 +104,5 @@ class Polynomial:
         return str(self)
 
 
-test = Polynomial([1, -1, -12, 24])
+test = Polynomial([1, 0, -7, 6])
 print(test)
