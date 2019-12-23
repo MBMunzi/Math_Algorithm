@@ -8,8 +8,9 @@ class Polynomial:
             coefficients(list): Polynomial coefficients.
             a0(int): Lower coefficient, like form x^1.
             an(int): Greatest coefficient, like form x^an
-            roots test(method): Test Roots which founded.
             roots(list): Initiate a list of roots
+            roots test(method): Test Roots which founded.
+
     """
     def __init__(self, coefficients):
         self.coefficients = coefficients
@@ -86,7 +87,7 @@ class Polynomial:
 
             Raises:
 
-                Exception: The Polynomial don't has a rational root.
+                Exception: The Polynomial doesn't have rational roots.
 
             Returns:
 
@@ -95,6 +96,8 @@ class Polynomial:
         for root in self.possibles_roots():
             if self.evaluate_polynomial(root) == 0:
                 self.roots.append(root)
+        if len(self.roots) == 0:
+            raise Exception("The Polynomial doesn't have rational roots.")
         return self.roots
 
     def __str__(self):
@@ -104,5 +107,5 @@ class Polynomial:
         return str(self)
 
 
-test = Polynomial([1, 0, -7, 6])
-print(test)
+print("Test_1", Polynomial([1, -6, 11, -6]))
+print("Test_2", Polynomial([0, -3, 15, -6]))

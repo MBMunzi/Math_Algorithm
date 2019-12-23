@@ -12,5 +12,7 @@ class TestPolynomial(unittest.TestCase):
         self.assertEqual(0, Polynomial.evaluate_polynomial(2))
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     unittest.main()
+
+
