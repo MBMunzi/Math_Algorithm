@@ -1,3 +1,6 @@
+import random
+
+
 class Polynomial:
     """ Instance a Polynomial.
 
@@ -17,6 +20,7 @@ class Polynomial:
         self.a0 = abs(self.coefficients[len(self.coefficients)-1])
         self.an = abs(self.coefficients[0])
         self.roots = []
+        self.coefficients.reverse()
         self.roots_test()
 
     def evaluate_a0(self):
@@ -30,6 +34,7 @@ class Polynomial:
             for i in range(1, self.a0):
                 if self.a0 % i == 0:
                     divisors_a0.extend((-1, 1, i, -i, self.a0, -self.a0))
+            divisors_a0 = list(set(divisors_a0))
             divisors_a0.sort()
         else:
             divisors_a0.extend((-1, 1))
@@ -46,6 +51,7 @@ class Polynomial:
             for i in range(1, self.an):
                 if self.an % i == 0:
                     divisors_an.extend((-1, 1, i, -i, self.an, -self.an))
+            divisors_an = list(set(divisors_an))
             divisors_an.sort()
         else:
             divisors_an.extend((-1, 1))
@@ -58,9 +64,11 @@ class Polynomial:
 
                 possibles_roots: possibles roots about polynomial.
         """
-        possibles_roots = []
-        for p in self.evaluate_a0():
-            for q in self.evaluate_an():
+        possibles_roots = [0]
+        divisors_a0 = self.evaluate_a0()
+        divisors_an = self.evaluate_an()
+        for p in divisors_a0:
+            for q in divisors_an:
                 possibles_roots.append(p/q)
         possibles_roots.sort()
         possibles_roots = list(set(possibles_roots))
@@ -76,9 +84,8 @@ class Polynomial:
                 Summation about Polynomial.
         """
         y = []
-        self.coefficients.reverse()
         for power in range(len(self.coefficients)):
-            partial_result = self.coefficients[power]*(x**(power+1))
+            partial_result = self.coefficients[power]*(x**power)
             y.append(partial_result)
         return sum(y)
 
@@ -96,6 +103,7 @@ class Polynomial:
         for root in self.possibles_roots():
             if self.evaluate_polynomial(root) == 0:
                 self.roots.append(root)
+                self.roots.sort()
         if len(self.roots) == 0:
             raise Exception("The Polynomial doesn't have rational roots.")
         return self.roots
@@ -107,5 +115,5 @@ class Polynomial:
         return str(self)
 
 
-print("Test_1", Polynomial([1, -6, 11, -6]))
-print("Test_2", Polynomial([0, -3, 15, -6]))
+print("Test_1:\n", Polynomial([1, 4, 1, -6]))
+print(Polynomial(random.sample(range(0, 10), 4)))
